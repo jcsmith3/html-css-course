@@ -9,16 +9,17 @@
   </head>
   <body>
     <header>
-      <h1>📘 The Code Magazine</h1>
+      <h1 id="page_title">📘 The Code Magazine</h1>
       <nav class="main_nav">
         <a href="#">Blog</a>
         <a href="#">Challenges</a>
         <a href="#">Flexbox</a>
-        <a href="#">Flexbox</a>
+        <a href="#">CSS Grid</a>
       </nav>
     </header>
     <main>
       <header id="post_header">
+        <button id="like_btn">👏Like</button>
         <h2 id="post_title">The Basic Language of the Web: HTML</h2>
         <img class="thumbnail" src="./images/laura-jones.jpg" />
         <p id="post_data">
@@ -81,38 +82,44 @@
           <p>Hopefully you learned something new here. See you next time!</p>
         </article>
       </section>
-      <section>
+      <section id="related_post_section">
         <h4>Related posts</h4>
         <ul id="related_posts">
-          <li class="post_card">
-            <img
-              class="thumbnail"
-              src="./images/related-1.jpg"
-              alt="guy coding"
-            />
-            <div>
-              <a href="#">How to Learn Web Development</a>
-              <p>By Jonas Schmedtmann</p>
-            </div>
-          </li>
-          <li class="post_card">
-            <img
-              class="thumbnail"
-              src="./images/related-2.jpg"
-              alt="ligtning"
-            />
-            <div>
-              <a href="#">The Unkown Powers of CSS</a>
-              <p>By Jim Dillon</p>
-            </div>
-          </li>
-          <li class="post_card">
-            <img class="thumbnail" src="./images/related-3.jpg" alt="code" />
-            <div>
-              <a href="#">Why JavaScript is Awesome</a>
-              <p>By Matilda</p>
-            </div>
-          </li>
+          <a href="#">
+            <li class="post_card">
+              <img
+                class="thumbnail"
+                src="./images/related-1.jpg"
+                alt="guy coding"
+              />
+              <div>
+                <p>How to Learn Web Development</p>
+                <p class="author">By Jonas Schmedtmann</p>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="post_card">
+              <img
+                class="thumbnail"
+                src="./images/related-2.jpg"
+                alt="ligtning"
+              />
+              <div>
+                <p>The Unkown Powers of CSS</p>
+                <p class="author">By Jim Dillon</p>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="post_card">
+              <img class="thumbnail" src="./images/related-3.jpg" alt="code" />
+              <div>
+                <p>Why JavaScript is Awesome</p>
+                <p class="author">By Matilda</p>
+              </div>
+            </li>
+          </a>
         </ul>
       </section>
       <footer>
